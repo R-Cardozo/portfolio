@@ -123,6 +123,22 @@
     }
 
 
+    /* Navigation Bar - Right Div */
+    .navRightDiv{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+
+    /* Navigation Bar - Social Icons */
+    .navSocial{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+
     /* Title Bar */
     .titleBar *{
         width: 100%;
@@ -208,5 +224,5 @@
 
     /* Project Banner */
     .projectBanner{
-        
+
     }
