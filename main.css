@@ -117,22 +117,30 @@
 
     /* Navigation Bar - Icon */
     .navIcon{
-        height: 40px;
+        height: 35px;
         width: auto;
-        object-fit: contain;
+        display: block;
     }
 
 
-    /* Navigation Bar - Right Div */
-    .navRightDiv{
+    /* Navigation Bar - Social Icons */
+    .socialIcon{
+        height: 16px;
+        width: auto;
+        display: block;
+    }
+
+
+    /* Navigation Bar - Social Div */
+    .navSocial{
         display: flex;
         align-items: center;
         gap: 0.5em;
     }
 
 
-    /* Navigation Bar - Social Icons */
-    .navSocial{
+    /* Navigation Bar - Right Div */
+    .navRightDiv{
         display: flex;
         align-items: center;
         gap: 0.5em;
