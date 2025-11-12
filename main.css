@@ -21,6 +21,10 @@
         --snow: #dadada;
         --heather: #292929;
         --gray: #3a3a3a;
+        --gold: #f4d47c;
+        --peach: #e7bfa6;
+        --cyan: #43e3f3;
+        --periwinkle: #9bb7ff;
     }
 
 
@@ -255,4 +259,5 @@
         box-shadow: 0 4px 10px rgba(0,0,0,0.35);
         border: var(--light-cyan);
         border-style: groove;
+        color: var(--periwinkle);
     }
