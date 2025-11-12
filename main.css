@@ -247,3 +247,12 @@
         justify-content: center;
         color: var(--text);
     }
+
+
+    /* Project Hover */
+    .project:hover{
+        transform: scale(1.025) translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+        border: var(--light-cyan);
+        border-style: groove;
+    }
