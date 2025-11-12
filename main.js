@@ -1,14 +1,22 @@
-const navButtons = document.querySelectorAll('.navBar button');
+document.addEventListener('DOMContentLoaded', () => {
+    const pageTheme = '2025'; // Sets all pages to have this them
+    const pageStyling = ''; // Sets all pages to have this styling
 
-navButtons.forEach(button => {
-    const originalButton = button.textContent;
-    const newButton = originalButton.toLowerCase();
+    document.body.setAttribute('theme', pageTheme);
+    document.body.setAttribute('styling', pageStyling);
 
-    button.addEventListener('mouseover', () => {
-        button.textContent = `// ${newButton}`;
-    });
+    const navButtons = document.querySelectorAll('.navBar button');
 
-    button.addEventListener('mouseout', () => {
-        button.textContent = originalButton;
+    navButtons.forEach(button => {
+        const originalButton = button.textContent;
+        const newButton = originalButton.toLowerCase();
+
+        button.addEventListener('mouseover', () => {
+            button.textContent = `// ${newButton}`;
+        });
+
+        button.addEventListener('mouseout', () => {
+            button.textContent = originalButton;
+        });
     });
 });
