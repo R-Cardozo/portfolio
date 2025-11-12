@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const pageTheme = '2025'; // Sets all pages to have this them
+    const pageTheme = '2025'; // Sets all pages to have this theme
     const pageStyling = ''; // Sets all pages to have this styling
 
     document.body.setAttribute('theme', pageTheme);
     document.body.setAttribute('styling', pageStyling);
+    
 
     const navButtons = document.querySelectorAll('.navBar button');
 
@@ -18,5 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('mouseout', () => {
             button.textContent = originalButton;
         });
+    });
+});
+
+const navMap = {
+    homeButton: '../',
+    projectButton: '/portfolio/projectPage/',
+    aboutButton: '/portfolio/aboutPage/',
+    contactButton: '/portfolio/contactPage/'
+};
+
+Object.entries(navMap).forEach(([id, path]) => {
+    const btn = document.getElementById(id);
+    if (btn) btn.addEventListener('click', () => {
+        window.location.href = path;
     });
 });
