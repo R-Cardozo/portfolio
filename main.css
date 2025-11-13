@@ -121,7 +121,7 @@
 
     /* Navigation Bar - Icon */
     .navIcon{
-        height: 35px;
+        max-height: 35px;
         width: auto;
         display: block;
     }
@@ -129,7 +129,7 @@
 
     /* Navigation Bar - Social Icons */
     .socialIcon{
-        height: 16px;
+        max-height: 16px;
         width: auto;
         display: block;
     }
