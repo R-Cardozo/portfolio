@@ -1,6 +1,6 @@
 # Portfolio
 
-#### Game Developer
+### Rachael Cardozo | Games & Software Developer
 
 ## Projects
 - TBA
