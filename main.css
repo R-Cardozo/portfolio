@@ -1,102 +1,263 @@
-:root{
-    --bg: #1f1f1f;
-    --text: #c1c1c1;
-    --headings: 'Tahoma';
-    --paragraphs: 'Trebuchet MD';
-}
+    /* List of Fonts */
+    :root{
+        --font-1: 'Tahoma';
+        --font-2: 'Trebuchet MS';
+        --font-3: 'Big Caslon';
+        --font-4: ;
+    }
 
-body{
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: var(--headings);
-    margin: 0;
-    text-align: center;
-}
 
-p{
-    font-family: var(--paragraphs);
-}
+    /* Theme Colours */
+    :root{
+        --dark-gray: #1f1f1f;
+        --dirty-white: #c1c1c1;
+        --dark-cyan: #244143;
+        --light-cyan: #366064;
+        --light-gray: #b8b8b8;
+        --silver: #717171;
+        --teal: #28c3d1;
+        --pale-teal: #3f6f73;
+        --light-teal: #5b9ca3;
+        --snow: #dadada;
+        --heather: #292929;
+        --gray: #3a3a3a;
+        --gold: #f4d47c;
+        --peach: #e7bfa6;
+        --cyan: #43e3f3;
+        --periwinkle: #9bb7ff;
+    }
 
-/* Navigation Bar */
-.navBar{
-    width: 100%;
-    font-family: var(--headings);
-    display: flex;
-    background-color: #366064;
-}
 
-/* Title Bar */
-.titleBar *{
-    width: 100%;
-    font-family: var(--headings);
-    font-size: 24px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background-color: #244143;
-    margin: 0;
-    height: 50px;
-}
+    /* Default Theme*/
+    :root{
+        --bg: var(--dark-gray);
+        --text: var(--dirty-white);
+        --paragraph-font: var(--font-1);
+        --heading-font: var(--font-2);
+        --nav-bg: var(--light-cyan);
+        --title-bg: var(--dark-cyan);
+        --link: var(--light-gray);
+        --visited: var(--silver);
+        --hover: var(--teal);
+        --button-bg: var(--pale-teal);
+        --button-hover-bg: var(--light-teal);
+        --button-hover-text: var(--snow);
+        --project-bg: var(--heather);
+        --project-container-bg: var(gray);
+    }
 
-/* Links */
-a{
-    text-decoration: none;
-}
 
-a:link{
-    color: #b8b8b8;
-}
+    /* Default Body - Changes based on 'Theme' variable */
+    body{
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: var(--paragraph-font), sans-serif;
+        margin: 0;
+        text-align: center;
+    }
 
-a:visited{
-    color: #717171;
-}
+    /* AS THEMES ARE CREATED, THEY CAN BE FOUND HERE */
 
-a:hover{
-    color: #28c3d1;
-}
+    /* 2025 THEME */
+    /* --> At the moment this matches the default theme */
+    body[theme="2025"]{
+        --bg:#1f1f1f;
+        --text: #c1c1c1;
+        --paragraph-font: 'Tahoma';
+        --heading-font: 'Trebuchet MS';
+        --nav-bg: #366064;
+        --title-bg: #244143;
+        --link: #b8b8b8;
+        --visited: #717171;
+        --hover: #28c3d1;
+        --button-bg: #3f6f73;
+        --button-hover-bg: #5b9ca3;
+        --button-hover-text: #dadada;
+        --project-bg: #292929;
+        --project-container-bg: #3a3a3a;
+    }
 
-/* Small Text */
-small{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    padding: 0.5em 0.5em;
-}
+    /* WINTER THEME */
+    body[styling="winter"]{
+        --bg:#c6c6c6;
+        --text: #6d6d6d;
+        --paragraph-font: 'Tahoma';
+        --heading-font: 'Trebuchet MS';
+        --nav-bg: #99d9df;
+        --title-bg: #c6c6c6;
+        --link: #b8b8b8;
+        --visited: #717171;
+        --hover: #68cdaf;
+        --button-bg: #6ab9b7;
+        --button-hover-bg: #5b9ca3;
+        --button-hover-text: #dadada;
+        --project-bg: #232441;
+        --project-container-bg: #b5b5b5;
+    }
 
-/* Buttons */
-button{
-    padding: 0.75em 1em;
-    text-align: center;
-    border-style: none;
-    background-color: rgb(63, 111, 115);
-    font-family: 'Tahoma';
-    font-size: 16px;    
-}
+    /* Default Paragraph Font */
+    p{
+        font-family: var(--paragraph-font);
+    }
 
-button:hover{
-    background-color: #5b9ca3;
-    color: #dadada;
-    font-weight: bold;
-    font-family: 'Trebuchet MD';
-}
 
-/* Project div */
-.projects{
-    border-radius: 20px;
-    padding: 20px;
-    margin: 5px;
-    background-color: #292929;
-}
+    /* Navigation Bar */
+    .navBar{
+        width: 100%;
+        font-family: var(--heading-font);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--nav-bg);
+    }
 
-/* Project Container */
-.projectContainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3.5px;
-    padding: 7px;
-    border-radius: 20px;
-    margin: 7px;
-    background-color: #3a3a3a;
-}
+
+    /* Navigation Bar - Buttons */
+    .navButtons{
+        display: flex;
+        gap: 0;
+    }
+
+
+    /* Navigation Bar - Icon */
+    .navIcon{
+        height: 35px;
+        width: auto;
+        display: block;
+    }
+
+
+    /* Navigation Bar - Social Icons */
+    .socialIcon{
+        height: 16px;
+        width: auto;
+        display: block;
+    }
+
+
+    /* Navigation Bar - Social Div */
+    .navSocial{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+
+    /* Navigation Bar - Right Div */
+    .navRightDiv{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+
+    /* Title Bar */
+    .titleBar *{
+        width: 100%;
+        font-family: var(--heading-font);
+        font-size: 24px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: var(--title-bg);
+        margin: 0;
+        height: 50px;
+    }
+
+
+    /* Links */
+    a{
+        text-decoration: none;
+    }
+
+    a:link{
+        color: var(--link);
+    }
+
+    a:visited{
+        color: var(--visited);
+    }
+
+    a:hover{
+        color: var(--hover);
+    }
+
+
+    /* Small Text */
+    small{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        padding: 0.5em 0.5em;
+    }
+
+
+    /* Buttons */
+    button{
+        padding: 0.75em 1em;
+        text-align: center;
+        border-style: none;
+        background-color: var(--button-bg);
+        font-family: var(--paragraph-font);
+        font-size: 16px;    
+    }
+
+
+    button:hover{
+        background-color: var(--button-hover-bg);
+        color: var(--button-hover-text);
+        font-weight: bold;
+        font-family: var(--heading-font);
+    }
+
+
+    /* Project Div */
+    .project{
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 5px;
+        background-color: var(--project-bg);
+        display: flex;
+    }
+
+
+    /* Project Container */
+    .projects{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.5px;
+        padding: 7px;
+        border-radius: 20px;
+        margin: 7px;
+        background-color: var(--project-container-bg);
+    }
+
+
+    /* Project Banner */
+    .projectBanner{
+        position: absolute;
+        overflow: hidden;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 29%;
+        background-color: var(--title-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text);
+    }
+
+
+    /* Project Hover */
+    .project:hover{
+        transform: scale(1.025) translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+        border: var(--light-cyan);
+        border-style: groove;
+        color: var(--periwinkle);
+    }
