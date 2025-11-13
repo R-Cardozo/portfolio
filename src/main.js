@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const navMap = {
-    homeButton: '../',
+    homeButton: '/portfolio/',
     projectButton: '/portfolio/projectPage/',
     aboutButton: '/portfolio/aboutPage/',
     contactButton: '/portfolio/contactPage/'
