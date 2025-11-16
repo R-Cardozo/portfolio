@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const navMap = {
-    homeButton: '/portfolio/',
-    projectButton: '/portfolio/projectPage/',
-    aboutButton: '/portfolio/aboutPage/',
-    contactButton: '/portfolio/contactPage/'
+    homeButton: './',
+    projectButton: './projectPage/',
+    aboutButton: './aboutPage/',
+    contactButton: './contactPage/'
 };
 
 Object.entries(navMap).forEach(([id, path]) => {
