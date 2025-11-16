@@ -22,11 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const repo = 'portfolio'; // Repo name
+
 const navMap = {
-    homeButton: './',
-    projectButton: './projectPage/',
-    aboutButton: './aboutPage/',
-    contactButton: './contactPage/'
+    homeButton: `/${repo}/`,
+    projectButton: `/${repo}/projectPage/`,
+    aboutButton: `/${repo}/aboutPage/`,
+    contactButton: `/${repo}/contactPage/`
 };
 
 Object.entries(navMap).forEach(([id, path]) => {
