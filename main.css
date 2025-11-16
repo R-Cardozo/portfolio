@@ -155,7 +155,7 @@
     .titleBar *{
         width: 100%;
         font-family: var(--heading-font);
-        font-size: clamp(18px, 1.45vw, 32px);
+        font-size: 24px;
         text-align: center;
         justify-content: center;
         align-items: center;
