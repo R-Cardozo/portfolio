@@ -262,3 +262,35 @@
         border-style: groove;
         color: var(--periwinkle);
     }
+
+
+    /* User Info Container */
+    .userInfo{
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 5px auto;
+        background-color: var(--project-bg);
+        display: flex;
+        max-width: 50%;
+        min-width: 280px;
+        gap: 32px;
+    }
+
+
+    /* User Info Avatar */
+    .userInfoAvatar{
+        display: flex;
+        height: 80px;
+        width: 100%;
+    }
+
+
+    /* User Info Text */
+    .userInfoText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
