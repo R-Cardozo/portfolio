@@ -60,6 +60,7 @@
 
     /* 2025 THEME */
     /* --> At the moment this matches the default theme */
+    /* The 2025 theme is also the default/fallback theme */
     body[theme="2025"]{
         --bg:#1f1f1f;
         --text: #c1c1c1;
