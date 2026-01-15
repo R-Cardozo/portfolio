@@ -379,3 +379,44 @@
         color: var(--dark-gray);
         font-family: var(--heading-font);
     }
+
+
+    /* Contact Form */
+    .contactForm{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
+    /* Contact Form - Input */
+    .contactForm input,
+    .contactForm textarea{
+        padding: 8px 10px;
+        border: 8px;
+        border: 1px solid var(--light-gray);
+        font-family: var(--paragraph-font);
+        font-size: 14px;
+        background-color: var(--bg);
+        color: var(--text);
+        resize: vertical;
+    }
+
+
+    /* Contact Form - Textboxes */
+    .contactForm textarea{
+        max-height: 100px;
+    }
+
+
+    /* Contact Form - Buttons */
+    .contactForm button{
+        align-self: flex-start;
+    }
+
+
+    /* Resume Card */
+    .resumeCard button{
+        padding: 10px 16px;
+        font-size: 14px;
+    }
