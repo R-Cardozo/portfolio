@@ -295,6 +295,7 @@
         border-radius: 50%;
     }
 
+
     /* User Info Text */
     .userInfoText{
         font-size: 13px;
@@ -302,4 +303,13 @@
         flex-direction: column;
         justify-content: center;
         text-align: left;
+    }
+
+
+    /* User Info Text - h3 */
+    .userInfoText h3{
+        margin: 0;
+        white-space: nowrap;
+        font-family: var(--heading-font);
+        font-size: 20px;
     }
