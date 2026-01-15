@@ -392,25 +392,26 @@
     /* Contact Form - Input */
     .contactForm input,
     .contactForm textarea{
-        padding: 8px 10px;
-        border: 8px;
-        border: 1px solid var(--light-gray);
-        font-family: var(--paragraph-font);
-        font-size: 14px;
-        background-color: var(--bg);
+        padding: 6px 8px;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--project-container-bg);
         color: var(--text);
-        resize: vertical;
+        font-family: var(--paragraph-font);
+        font-size: 13px;
     }
 
 
     /* Contact Form - Textboxes */
     .contactForm textarea{
-        max-height: 100px;
+        min-height: 80px;
+        resize: vertical;
     }
 
 
     /* Contact Form - Buttons */
     .contactForm button{
+        margin-top: 6px;
         align-self: flex-start;
     }
 
@@ -419,4 +420,24 @@
     .resumeCard button{
         padding: 10px 16px;
         font-size: 14px;
+        border-radius: 999px;
+    }
+
+
+    /* Contact Form - Formatting */
+    .contactForm form{
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        color: var(--light-gray);
+        gap: 4px;
+    }
+
+
+    /* Contact Form - Spans input and textbox along same line */
+    .contactForm .formRow{
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        align-items: center;
+        gap: 8px;
     }
