@@ -335,3 +335,33 @@
         margin: 20px auto;
         max-width: 900px;
     }
+
+
+    /* Skills */
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+
+    /* Skill Card */
+    .skill{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 4px 10px;
+        border-radius: 999px;
+
+        color: var(--text);
+
+        font-size: 13px;
+        line-height: 1;
+        white-space: nowrap;
+
+        background-color: var(--button-bg);
+        color: var(--dark-gray);
+        font-family: var(--heading-font);
+    }
