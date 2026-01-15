@@ -441,3 +441,18 @@
         align-items: center;
         gap: 8px;
     }
+
+
+    /* Contact Form - Span formatting */
+    .contactForm .formRow span{
+        font-size: 13px;
+        color: var(--light-gray);
+        text-align: right;
+    }
+
+
+    /* Contact Form - Message Textarea */
+    .contactForm .formRow textarea{
+        align-self: start;
+        min-height: 80px;
+    }
