@@ -346,8 +346,8 @@
     }
 
 
-    /* Skill Card */
-    .skill{
+    /* Pill Shape - for use with general cards */
+    .pillShape{
         display: inline-flex;
         align-items: center;
         justify-content: center;
