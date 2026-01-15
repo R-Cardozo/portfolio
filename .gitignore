@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Vite build outputs
+dist/
+dist-sandbox/
+
+# Local Vite config for sandbox
+vite.config.js
+
+# Local env files
+.env
+.env.local
+
+# OS / IDE files
+.DS_Store
+desktop.ini
+.vscode/
