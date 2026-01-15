@@ -281,11 +281,19 @@
 
     /* User Info Avatar */
     .userInfoAvatar{
-        display: flex;
         height: 80px;
-        width: 100%;
+        width: 80px;
+        flex-shrink: 0;
     }
 
+
+    /* User Info Avatar - img */
+    .userInfoAvatar img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
 
     /* User Info Text */
     .userInfoText{
