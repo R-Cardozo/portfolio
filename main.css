@@ -327,12 +327,18 @@
     }
 
 
+    /* User Info Text - Divs */
+    .userInfoText > div{
+        margin-bottom: 8px;
+    }
+
+
     /* General Card */
     .card{
         background-color: var(--project-bg);
         border-radius: 18px;
         padding: 20px;
-        margin: 20px auto;
+        margin: 2px 0   ;
         max-width: 900px;
     }
 
@@ -341,8 +347,16 @@
     .skills{
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 7px;
         align-items: flex-start;
+    }
+
+
+    /* Skills - Caption */
+    .skills h4{
+        margin: 0 0 4px 0;
+        font-size: 14px;
+        margin-top: 0px;
     }
 
 
