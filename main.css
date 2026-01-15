@@ -325,3 +325,13 @@
         font-family: var(--heading-font);
         font-size: 20px;
     }
+
+
+    /* General Card */
+    .card{
+        background-color: var(--project-bg);
+        border-radius: 18px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 900px;
+    }
