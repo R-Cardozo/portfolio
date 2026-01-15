@@ -266,16 +266,20 @@
 
     /* User Info Container */
     .userInfo{
-        position: relative;
-        overflow: hidden;
-        border-radius: 17px;
-        padding: 15px;
-        margin: 5px auto;
-        background-color: var(--project-bg);
         display: flex;
-        max-width: 50%;
+        align-items: center;
+        gap: 16px;
+
+        padding: 16px 20px;
+        margin: 20px auto;
+
+        max-width: 520px;
         min-width: 280px;
-        gap: 32px;
+
+        background-color: var(--project-bg);
+        border-radius: 18px;
+
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35)
     }
 
 
@@ -298,11 +302,19 @@
 
     /* User Info Text */
     .userInfoText{
-        font-size: 13px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: left;
+        gap: 4px;
+    }
+
+
+    /* User Info Text - p */
+    .userInfoText p{
+        margin: 0;
+        font-size: 13px;
+        color: var(--light-gray);
     }
 
 
