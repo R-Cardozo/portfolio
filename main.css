@@ -268,8 +268,8 @@
     .userInfo{
         position: relative;
         overflow: hidden;
-        border-radius: 20px;
-        padding: 20px;
+        border-radius: 17px;
+        padding: 15px;
         margin: 5px auto;
         background-color: var(--project-bg);
         display: flex;
@@ -289,6 +289,7 @@
 
     /* User Info Text */
     .userInfoText{
+        font-size: 13px;
         display: flex;
         flex-direction: column;
         justify-content: center;
