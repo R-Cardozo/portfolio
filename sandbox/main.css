@@ -416,8 +416,8 @@
     }
 
 
-    /* Resume Card */
-    .resumeCard button{
+    /* Card Buttons */
+    .cardButton button{
         padding: 10px 16px;
         font-size: 14px;
         border-radius: 999px;
