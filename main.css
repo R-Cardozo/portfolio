@@ -267,7 +267,8 @@
     /* User Info Container */
     .userInfo{
         display: flex;
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: stretch;
         gap: 16px;
 
         padding: 16px 20px;
@@ -340,6 +341,10 @@
         padding: 7px;
         margin: 2px 0   ;
         max-width: 900px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
 
 
@@ -357,6 +362,7 @@
         margin: 0 0 4px 0;
         font-size: 14px;
         margin-top: 0px;
+        text-align: center;
     }
 
 
@@ -378,4 +384,92 @@
         background-color: var(--button-bg);
         color: var(--dark-gray);
         font-family: var(--heading-font);
+    }
+
+
+    /* Contact Form */
+    .contactForm{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
+    /* Contact Form - Input */
+    .contactForm input,
+    .contactForm textarea{
+        padding: 6px 8px;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--project-container-bg);
+        color: var(--text);
+        font-family: var(--paragraph-font);
+        font-size: 13px;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+
+    /* Contact Form - Textboxes */
+    .contactForm textarea{
+        min-height: 80px;
+        resize: vertical;
+    }
+
+
+    /* Contact Form - Buttons */
+    .contactForm button{
+        margin-top: 6px;
+        align-self: flex-start;
+    }
+
+
+    /* Card Buttons */
+    .cardButton button{
+        padding: 10px 16px;
+        font-size: 14px;
+        border-radius: 999px;
+        align-self: center;
+    }
+
+
+    /* Contact Form - Formatting */
+    .contactForm form{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        color: var(--light-gray);
+        gap: 4px;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+
+    /* Contact Form - Spans input and textbox along same line */
+    .contactForm .formRow{
+        display: grid;
+        grid-template-columns: 120px auto;
+        width: 100%;
+        align-items: start;
+        gap: 12px;
+        margin: 0 auto;
+    }
+
+
+    /* Contact Form - Span formatting */
+    .contactForm .formRow span{
+        font-size: 13px;
+        color: var(--light-gray);
+        text-align: right;
+    }
+
+
+    /* Contact Form - Message Textarea */
+    .contactForm .formRow textarea{
+        align-self: start;
+        min-height: 100px;
     }
