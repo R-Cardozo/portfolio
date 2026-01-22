@@ -15,5 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
             message: form.message.value.trim(),
             email: form.email.value.trim()
         };
+
+        if(!params.name || !params.message || !params.email){
+            alert("Please fill out all fields!");
+            return;
+        }
+
+        emailjs.send(
+            "service_uq7quzo",
+            "template_7bcvqzg",
+            params
+        ).then(() => {
+            alert("Message sent!");
+            form.reset();
+        }).catch(err => {
+            alert("Failed to send message :(");
+            console.error("EmailJS Error", err);
+        });
     });
-})
+});
