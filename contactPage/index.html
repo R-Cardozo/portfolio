@@ -5,7 +5,9 @@
         <title>Contact | RachaelCardozo.dev</title>
         <link rel="stylesheet" href="../main.css">
         <link rel="icon" href="./assets/images/website-icon.png" type="image/png">
-        <script type="module" src="../src/main.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="module" src="src/main.js" defer></script>
+        <script type="module" src="src/email.js" defer></script>
     </head>
 
     <body>
@@ -41,7 +43,7 @@
             </div>
 
             <div class="card contactForm">
-                <form>
+                <form id="contactForm">
                     <label class="formRow">
                         <span>Name</span>
                         <input type="text" name="name" placeholder="Eg. John Smith" required>
@@ -66,7 +68,7 @@
 
             <div class="card cardButton">
                 <h4>Click to download my resume!</h4>
-                <a href="/assets/files/resume.pdf">
+                <a href="/assets/files/resume.pdf" target="_blank" rel="noopener">
                     <button>Download</button>
                 </a>
             </div>
